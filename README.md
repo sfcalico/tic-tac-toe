@@ -35,6 +35,7 @@ We will be making a Tic Tac Toe game using all of these concepts.
 ## Bonuses
 
 * Implement your reset button without refreshing the whole page
+* Implement a turn timer so that if a player takes too long without making a move, a random move is made for them
 * Track player's wins over time
 * Add a simple AI to support one player vs computer mode. In this case, "simple" just means having the computer pick a random empty square.
 * Make your computer seem more human by adding a short time delay between your turn and the computer's turn.
