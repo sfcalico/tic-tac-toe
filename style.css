@@ -1,0 +1,47 @@
+.container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    background: #ccc;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    width: 490px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+h1 {
+    color:darkgreen;
+    justify-content:space-between;
+    font-family: Lucida sans, sans-serif;
+    text-transform: uppercase;
+}
+.tile {
+    display: flex;
+    border: 3px solid black;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-family: Lucida Sans;
+}
+#status {
+    color:darkgreen;
+    font-family: sans-serif;
+}
+#reset {
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 200ms transform;
+    font-family: Verdana
+}
+#reset:hover {
+    cursor: pointer;
+    transform:translate(-3px);
+}
