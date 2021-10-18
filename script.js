@@ -3,7 +3,6 @@ console.log(tiles)
 const title = document.getElementById('title');
 const reset = document.getElementById('reset');
 const stat = document.getElementById('status');
-stat.innerText = "Place your bets...";
 const boardState = ["", "", "", "", "", "", "", "", ""];
 const player1 = "X";
 const player2 = "O";
@@ -15,19 +14,19 @@ const clickTile = (e) => {
     if (gameOver){
         return;
     }
+    count++
     const id = e.target.id;
     console.log(id);
     if(!boardState[id]){
         boardState[id] = currentPlayer;
         e.target.innerText = currentPlayer;
         statusDisplay()
-        count++
         if (count === 9) {
             title.innerText = `Looks like we have a tie!`;
         }
         if(playerWon()){
-            gameOver = true;
             title.innerText = `${currentPlayer} won the game!`;
+            gameOver = true;
             return;
         }
         currentPlayer = currentPlayer === player1 ? player2 : player1;
