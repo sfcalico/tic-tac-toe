@@ -3,11 +3,13 @@
     flex-direction:column;
     justify-content:center;
     align-items: center;
+    background-color: rgb(230, 238, 210);
 }
 
 .board {
     display: grid;
-    background: #ccc;
+    background: goldenrod;
+    border-radius: 5px;
     gap: 10px;
     padding: 10px;
     flex-grow: 1;
@@ -16,32 +18,44 @@
     grid-template-rows: repeat(3,1fr);
 }
 h1 {
-    color:darkgreen;
+    color:goldenrod;
     justify-content:space-between;
-    font-family: Lucida sans, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
     text-transform: uppercase;
 }
 .tile {
     display: flex;
-    border: 3px solid black;
+    border: 3px solid rgb(121, 108, 36);
+    color:rgb(189, 46, 46);
+    border-radius: 5px;
     height: 150px;
     width: 150px;
     justify-content: center;
     align-items: center;
     font-size: 65px;
-    font-family: Lucida Sans;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+.tile:hover {
+    border:3px solid rgb(219, 89, 38);
+}
+
 #status {
-    color:darkgreen;
-    font-family: sans-serif;
+    color:goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
 }
 #reset {
     padding: 10px 20px;
     font-size: 20px;
     transition: 200ms transform;
-    font-family: Verdana
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 80px;
+    border-radius: 5px;
 }
 #reset:hover {
     cursor: pointer;
     transform:translate(-3px);
+    color:rgb(189, 46, 46);
+    border-radius: 5px;
 }
